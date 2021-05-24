@@ -1,0 +1,31 @@
+:root {
+  --dark-blue: #1B262C;
+  --light-blue: #5ab1bb;
+  --light-gray: #DEDEDE;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
+body {
+  height: 100vh;
+  line-height: 1.5;
+  background: var(--dark-blue);
+  -webkit-font-smoothing: antialiased;
+}
+
+html { 
+  @media (max-width: 1080px) {
+    font-size: 93.75%
+  }
+  @media (max-width: 720px) {
+    font-size: 87.5%
+  }
+}
+
+button {
+  cursor: pointer;
+}

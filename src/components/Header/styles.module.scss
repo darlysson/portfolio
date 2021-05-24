@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  svg {
+    width: 2.5rem;
+    height: 2.5rem;
+    color: var(--light-blue)
+  }
+  
+  nav {
+    button {
+      font-family: 'Poppins', sans-serif;
+      border-radius: 0.25rem;
+      background-color: transparent;
+      border: 3px solid var(--light-blue);
+      color: var(--light-gray);
+      padding: .75rem 1.25rem;
+      font-size: .875rem;
+      line-height: 1.125;
+    }
+  }
+}
