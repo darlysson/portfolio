@@ -1,24 +1,67 @@
 .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  
-  svg {
-    width: 2.5rem;
-    height: 2.5rem;
-    color: var(--light-blue)
-  }
   
   nav {
-    button {
-      font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    
+    .downloadButton {
       border-radius: 0.25rem;
+      text-decoration: none;
       background-color: transparent;
       border: 3px solid var(--light-blue);
       color: var(--light-gray);
       padding: .75rem 1.25rem;
-      font-size: .875rem;
+      font-size: 1rem;
       line-height: 1.125;
+      display: flex;
+      align-items: center;
+      transition: background 1s;
+      
+      &:hover {
+        background: var(--light-blue);
+        border: 3px solid var(--dark-blue);
+        color: var(--dark-blue);
+
+        svg {
+        color: var(--dark-blue)
+        }
+      }
+
+      svg {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-left: 1rem;
+        color: var(--light-blue)
+      }
+    }
+
+    .links {
+      ul {
+        list-style: none;
+        display: flex;
+
+        li {
+          & + li {
+            margin-left: 1rem;
+          }
+
+          a {
+            font-size: 1.25rem;
+            font-weight: 500;
+            text-decoration: none;
+            color: var(--light-gray);
+            text-transform: uppercase;
+            background: linear-gradient(var(--light-blue) 0 0) var(--width, 201%) 100% /200% 5px no-repeat;
+            
+            &:hover {
+               --width: -101%;
+              transition: 1s;
+            }
+          }
+        }
+      }
     }
   }
 }

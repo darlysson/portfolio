@@ -19,7 +19,11 @@ export default function Home() {
       <h2 className={titleDesc}>I build things for the web.</h2>
       <span className={description}>
         Frontend Web Developer currently based in Lisbon
-        <span role="img" aria-label="portugal-flag">
+        <span
+          role="img"
+          aria-label="portugal-flag"
+          style={{ marginLeft: "8px" }}
+        >
           &#x1F1F5;&#x1F1F9;
         </span>
       </span>

@@ -7,7 +7,7 @@ import Header from "../components/Header"
 import Home from "../components/Home"
 
 import "../styles/global.scss"
-import { Container } from "./home.module.scss"
+import { Container } from "../styles/index.module.scss"
 
 export default function Index() {
   return (
