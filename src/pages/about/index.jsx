@@ -1,9 +1,13 @@
 import React from "react"
 
+import Layout from "../../components/Layout"
+
 export default function About() {
   return (
-    <div>
-      <h1>About page is coming soon!</h1>
-    </div>
+    <Layout>
+      <h1 style={{ color: "#FFF", fontSize: "25px" }}>
+        About page is coming soon!
+      </h1>
+    </Layout>
   )
 }

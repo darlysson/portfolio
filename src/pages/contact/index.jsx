@@ -1,9 +1,12 @@
 import React from "react"
+import Layout from "../../components/Layout"
 
 export default function Contact() {
   return (
-    <div>
-      <h1>Contact page is coming soon. =D</h1>
-    </div>
+    <Layout>
+      <h1 style={{ color: "#FFF", fontSize: "25px" }}>
+        Contact page is coming soon!
+      </h1>
+    </Layout>
   )
 }

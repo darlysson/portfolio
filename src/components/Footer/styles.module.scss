@@ -1,0 +1,47 @@
+.container {
+  position: fixed;
+  bottom: 0;
+  background: var(--dark-blue);
+  width: 100%;
+  left: 0;
+  height: 5rem;
+
+  .content {
+    max-width: 80rem;
+    padding: 1.5rem 1rem;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0.875rem;
+    color: var(--light-gray);
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+      margin: 0 0.3rem;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: var(--light-gray);
+      cursor: pointer;
+      transition: filter 0.2s;
+
+      &:hover {
+        filter: brightness(0.9);
+      }
+
+      &.me {
+        color: var(--light-blue);
+
+        &:hover {
+          transition: color .2s;
+        }
+      }
+
+      svg {
+        margin-right: 0.3rem;
+      }
+    }
+  }
+}
