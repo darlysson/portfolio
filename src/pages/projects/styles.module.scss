@@ -1,0 +1,18 @@
+.projects {
+  margin: 0 auto;
+  max-width: 60rem;
+
+  .sectionTitle {
+    font-size: 2rem;
+    color: var(--light-blue);
+    padding-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+  }
+
+  .projectList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    grid-gap: 2rem;
+  }
+}

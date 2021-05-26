@@ -7,13 +7,13 @@ import Header from "../Header"
 import Footer from "../Footer"
 
 import "../../styles/global.scss"
-import { container } from "./styles.module.scss"
+import { container, content } from "./styles.module.scss"
 
 export default function Layout({ children, showFooter = true }) {
   return (
     <main className={container}>
       <Header />
-      <div>{children}</div>
+      <div className={content}>{children}</div>
       {showFooter && <Footer />}
     </main>
   )

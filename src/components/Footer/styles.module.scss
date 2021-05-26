@@ -1,10 +1,7 @@
 .container {
-  position: fixed;
-  bottom: 0;
   background: var(--dark-blue);
   width: 100%;
-  left: 0;
-  height: 5rem;
+  height: 2rem;
 
   .content {
     max-width: 80rem;
@@ -17,6 +14,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 
     a {
       margin: 0 0.3rem;

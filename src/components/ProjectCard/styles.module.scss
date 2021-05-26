@@ -1,0 +1,47 @@
+.project {
+  background: var(--light-gray);
+  padding: 1rem;
+  border-radius: 0.25rem;
+
+  .title {
+    color: var(--light-blue);
+    font-weight: 500;
+    font-family: 'Roboto', 'Poppins', sans-serif;
+    padding-bottom: 0.75rem;
+    font-size: 1.3rem;
+  }
+  
+  p {
+    color: var(--dark-blue);
+    font-size: 0.875rem;
+    line-height: 1.4rem;
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    padding-bottom: 0.75rem;
+  }
+
+  .techs {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    a {
+      text-decoration: none;
+      
+      & + a {
+        margin-left: 0.5rem;
+      }
+      
+      svg {
+        width: 1.5rem;
+        height: 1.5rem;
+        color: var(--dark-blue);
+        opacity: 0.6; 
+        
+        &:hover {
+          opacity: 1;
+          transition: opacity 0.5s;
+        }
+      }
+    }
+  }
+}

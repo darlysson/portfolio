@@ -1,0 +1,35 @@
+.container {
+  margin: 0 auto;
+  max-width: 60rem;
+
+  .profileImg {
+    border-radius: 50%;
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+    color: var(--light-blue);
+    padding-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 40rem;
+    margin: 0 auto;
+
+    p {
+      color: var(--light-gray);
+      padding-bottom: 1rem;
+      font-family: 'Poppins', 'Roboto', sans-serif;
+      line-height: 1.65rem;
+      font-size: 1.1rem;
+      text-align: center;
+    }
+  }
+}
