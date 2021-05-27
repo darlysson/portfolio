@@ -9,6 +9,7 @@
     font-family: 'Roboto', 'Poppins', sans-serif;
     padding-bottom: 0.75rem;
     font-size: 1.3rem;
+    filter: brightness(60%);
   }
   
   p {
@@ -16,31 +17,39 @@
     font-size: 0.875rem;
     line-height: 1.4rem;
     font-family: 'Poppins', 'Roboto', sans-serif;
-    padding-bottom: 0.75rem;
+    padding-bottom: 2rem;
   }
 
   .techs {
     display: flex;
-    align-items: center;
     justify-content: end;
 
     a {
       text-decoration: none;
+      color: var(--dark-blue);
+      opacity: 0.6; 
+
+      &:hover {
+        opacity: 1;
+        transition: opacity 0.5s;
+      }
       
       & + a {
         margin-left: 0.5rem;
       }
+
+      & + svg {
+        margin-left: 0.5rem;
+      }
+    }
+
+    svg {
+      width: 1.5rem;
+      height: 1.5rem;
+      filter: brightness(90%);
       
-      svg {
-        width: 1.5rem;
-        height: 1.5rem;
-        color: var(--dark-blue);
-        opacity: 0.6; 
-        
-        &:hover {
-          opacity: 1;
-          transition: opacity 0.5s;
-        }
+      & + svg {
+        margin-left: 0.5rem;
       }
     }
   }

@@ -5,9 +5,14 @@
   .sectionTitle {
     font-size: 2rem;
     color: var(--light-blue);
-    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
+    background: 
+     linear-gradient(90deg, currentColor calc(10%/3), transparent 0 calc(200%/3), currentColor 0) 
+     var(--d, 0%) 100% /300% 3px 
+    no-repeat;
+    transition:0.5s;
   }
 
   .projectList {

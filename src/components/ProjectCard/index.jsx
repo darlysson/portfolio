@@ -3,6 +3,8 @@ import React from "react"
 import { GrReactjs } from "react-icons/gr"
 import { AiFillGithub } from "react-icons/ai"
 import { GiWorld } from "react-icons/gi"
+import { SiTypescript } from "react-icons/si"
+import { DiSass } from "react-icons/di"
 
 import { project, techs, title } from "./styles.module.scss"
 
@@ -21,9 +23,9 @@ export default function ProjectCard() {
         <a href="#">
           <AiFillGithub />
         </a>
-        <a href="#">
-          <GrReactjs />
-        </a>
+        <DiSass color="#CF649A" />
+        <GrReactjs color="#61DAFB" />
+        <SiTypescript color="#3178C6" />
       </div>
     </div>
   )
