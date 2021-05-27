@@ -1,0 +1,66 @@
+.modalContent {
+  background: var(--dark-blue);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2.5rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .modalHeader {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+
+    .closeIcon {
+      border: none;
+      background: none;
+
+      svg {
+        color: var(--light-blue);
+        width: 2.8rem;
+        height: 2.8rem;
+        cursor: pointer;
+      }
+    }
+  }
+
+  ul {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    li {
+      & + li {
+        padding-top: 2rem;
+      }
+
+      &:last-of-type {
+        padding-top: 3rem;
+      }
+
+      a.link {
+        text-decoration: none;
+        font-size: 3rem;
+        font-weight: bold;
+        font-family: "Poppins", "Roboto", sans-serif;
+        color: var(--light-gray);
+        text-shadow: var(--t, 0ch) 0 #fff;
+        text-indent: calc(-2 * var(--t, 0ch));
+        background: linear-gradient(
+            90deg,
+            var(--light-blue) calc(50% / 3),
+            transparent 0 calc(200% / 3),
+            var(--light-blue) 0
+          )
+          var(--d, 0%) 100%/300% 3px no-repeat;
+        transition: 0.5s;
+      }
+    }
+  }
+}

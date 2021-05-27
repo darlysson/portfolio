@@ -1,56 +1,23 @@
 .container {
-  // margin-bottom: 7.5rem;
-  
   nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 
-    .mobileIcon {
+    .hamburgerIcon {
       border: none;
       background: none;
-      
+
       svg {
         color: var(--light-blue);
         width: 2.2rem;
         height: 2.2rem;
         cursor: pointer;
-        
+
         @media (min-width: 767px) {
           display: none;
         }
-      }
-    }
-    
-    .downloadButton {
-      border-radius: 0.25rem;
-      text-decoration: none;
-      background-color: transparent;
-      border: 3px solid var(--light-blue);
-      color: var(--light-gray);
-      padding: .75rem 1.25rem;
-      font-size: 1rem;
-      line-height: 1.125;
-      display: flex;
-      align-items: center;
-      transition: background 1s;
-      
-      &:hover {
-        background: var(--light-blue);
-        border: 3px solid var(--dark-blue);
-        color: var(--dark-blue);
-
-        svg {
-        color: var(--dark-blue)
-        }
-      }
-
-      svg {
-        width: 1.5rem;
-        height: 1.5rem;
-        margin-left: 1rem;
-        color: var(--light-blue)
       }
     }
 
@@ -74,8 +41,9 @@
             text-decoration: line-through;
             color: var(--light-blue);
             text-transform: uppercase;
-            background: linear-gradient(var(--light-gray) 0 0) var(--width, 201%) 100% /200% 5px no-repeat;
-            
+            background: linear-gradient(var(--light-gray) 0 0)
+              var(--width, 201%) 100% /200% 5px no-repeat;
+
             &:hover {
               --width: -101%;
               transition: 1s;

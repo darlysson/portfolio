@@ -17,10 +17,10 @@ export default function ProjectCard() {
         think, part Jekyll, part create-react-app.
       </p>
       <div className={techs}>
-        <a href="#">
+        <a href="https://faqs.pages.dev/">
           <GiWorld />
         </a>
-        <a href="#">
+        <a href="https://github.com/darlysson/faqs">
           <AiFillGithub />
         </a>
         <DiSass color="#CF649A" />

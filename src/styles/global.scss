@@ -1,13 +1,13 @@
 :root {
-  --dark-blue: #1B262C;
+  --dark-blue: #1b262c;
   --light-blue: #5ab1bb;
-  --light-gray: #DEDEDE;
+  --light-gray: #dedede;
 }
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -17,12 +17,12 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-html { 
+html {
   @media (max-width: 1080px) {
-    font-size: 93.75%
+    font-size: 93.75%;
   }
   @media (max-width: 720px) {
-    font-size: 87.5%
+    font-size: 87.5%;
   }
 }
 

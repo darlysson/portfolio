@@ -1,36 +1,21 @@
 import React from "react"
-import { BiLinkExternal } from "react-icons/bi"
-import { GrClose } from "react-icons/gr"
+import { Link } from "gatsby"
 import { GiHamburgerMenu } from "react-icons/gi"
 
-import {
-  container,
-  downloadButton,
-  mobileIcon,
-  links,
-} from "./styles.module.scss"
-import { Link } from "gatsby"
+import DownloadCVButton from "../DownloadCVButton"
 
-export default function Header() {
+import { container, hamburgerIcon, links } from "./styles.module.scss"
+
+export default function Header({ onOpenModal }) {
   return (
     <header className={container}>
       <nav>
-        <a
-          role="button"
-          className={downloadButton}
-          rel="noreferrer"
-          href="https://app.box.com/s/0jexa7jax6j3klmt66pzjzhiqin096jl"
-          target="_blank"
-        >
-          Download CV
-          <BiLinkExternal />
-        </a>
+        <DownloadCVButton />
 
-        <button className={mobileIcon}>
+        <button className={hamburgerIcon} onClick={onOpenModal}>
           <GiHamburgerMenu />
         </button>
 
-        {/* <GrClose className={mobileIcon} /> */}
         <div className={links}>
           <ul>
             <li>

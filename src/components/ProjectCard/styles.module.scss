@@ -6,17 +6,17 @@
   .title {
     color: var(--light-blue);
     font-weight: 500;
-    font-family: 'Roboto', 'Poppins', sans-serif;
+    font-family: "Roboto", "Poppins", sans-serif;
     padding-bottom: 0.75rem;
     font-size: 1.3rem;
     filter: brightness(60%);
   }
-  
+
   p {
     color: var(--dark-blue);
     font-size: 0.875rem;
     line-height: 1.4rem;
-    font-family: 'Poppins', 'Roboto', sans-serif;
+    font-family: "Poppins", "Roboto", sans-serif;
     padding-bottom: 2rem;
   }
 
@@ -27,13 +27,13 @@
     a {
       text-decoration: none;
       color: var(--dark-blue);
-      opacity: 0.6; 
+      opacity: 0.6;
 
       &:hover {
         opacity: 1;
         transition: opacity 0.5s;
       }
-      
+
       & + a {
         margin-left: 0.5rem;
       }
@@ -47,7 +47,7 @@
       width: 1.5rem;
       height: 1.5rem;
       filter: brightness(90%);
-      
+
       & + svg {
         margin-left: 0.5rem;
       }

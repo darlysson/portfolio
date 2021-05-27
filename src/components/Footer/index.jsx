@@ -14,12 +14,12 @@ export default function Footer() {
           myself
         </Link>
         😃, using
-        <a href="https://reactjs.org/" target="_blank">
+        <a href="https://reactjs.org/" rel="noreferrer" target="_blank">
           <SiReact color="#61DAFB" />
           React
         </a>
         and
-        <a href="https://www.gatsbyjs.com/" target="_blank">
+        <a href="https://www.gatsbyjs.com/" rel="noreferrer" target="_blank">
           <GrGatsbyjs color="#7026B9" />
           Gatsby JS
         </a>

@@ -13,7 +13,12 @@ export default function About() {
   return (
     <Layout>
       <section className={container}>
-        <h2 className={sectionTitle}>About me 👨‍💻</h2>
+        <h2 className={sectionTitle}>
+          About me
+          <span role="img" aria-label="programmer-emoji">
+            👨‍💻
+          </span>
+        </h2>
 
         <div className={content}>
           <StaticImage
@@ -30,7 +35,6 @@ export default function About() {
             A native New Yorker by way of Manhattan, current New Jerseyan. I've
             spent half of my life moving back and forth between the two, so you
             could say I like the pizza and bagels here enough to stick around.
-            🍕🥯
           </p>
           <p>
             I've had a passion for technology and all things nerdy since I was

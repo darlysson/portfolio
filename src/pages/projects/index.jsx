@@ -9,7 +9,12 @@ export default function Projects() {
   return (
     <Layout>
       <section className={projects}>
-        <h2 className={sectionTitle}>Projects 💻</h2>
+        <h2 className={sectionTitle}>
+          Projects
+          <span role="img" aria-label="computer-emoji">
+            💻
+          </span>
+        </h2>
         <div className={projectList}>
           <ProjectCard />
           <ProjectCard />

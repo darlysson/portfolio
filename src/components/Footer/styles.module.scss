@@ -11,7 +11,7 @@
     font-size: 0.875rem;
     line-height: 1.7rem;
     color: var(--light-gray);
-    font-family: 'Poppins', 'Roboto', sans-serif;
+    font-family: "Poppins", "Roboto", sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,7 +34,7 @@
         color: var(--light-blue);
 
         &:hover {
-          transition: color .2s;
+          transition: color 0.2s;
         }
       }
 
