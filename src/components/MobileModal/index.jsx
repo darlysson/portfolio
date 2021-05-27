@@ -30,7 +30,7 @@ export default function MobileModal({ isOpen, onRequestClose }) {
 
         <ul>
           <li>
-            <Link to="/" className={link}>
+            <Link to="/" onClick={onRequestClose} className={link}>
               Home
             </Link>
           </li>
