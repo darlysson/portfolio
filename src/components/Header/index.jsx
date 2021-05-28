@@ -12,7 +12,11 @@ export default function Header({ onOpenModal }) {
       <nav>
         <DownloadCVButton />
 
-        <button className={hamburgerIcon} onClick={onOpenModal}>
+        <button
+          className={hamburgerIcon}
+          aria-label="Hamburger Menu"
+          onClick={onOpenModal}
+        >
           <GiHamburgerMenu />
         </button>
 

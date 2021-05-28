@@ -10,6 +10,7 @@ import Footer from "../Footer"
 
 import "../../styles/global.scss"
 import { container, content } from "./styles.module.scss"
+import Seo from "../Seo"
 
 export default function Layout({ children, showFooter = true }) {
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -24,6 +25,7 @@ export default function Layout({ children, showFooter = true }) {
 
   return (
     <main className={container}>
+      <Seo />
       <Header onOpenModal={handleOpenModal} />
       <div className={content}>{children}</div>
       {showFooter && <Footer />}

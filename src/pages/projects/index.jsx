@@ -3,12 +3,13 @@ import React from "react"
 import Layout from "../../components/Layout"
 import ProjectCard from "../../components/ProjectCard"
 
-import { projectList, projects, sectionTitle } from "./styles.module.scss"
+import { projectList, container, sectionTitle } from "./styles.module.scss"
+import { projects } from "../../api/data.json"
 
 export default function Projects() {
   return (
     <Layout>
-      <section className={projects}>
+      <section className={container}>
         <h2 className={sectionTitle}>
           Projects
           <span role="img" aria-label="computer-emoji">
@@ -16,10 +17,9 @@ export default function Projects() {
           </span>
         </h2>
         <div className={projectList}>
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
+          {projects.map(project => {
+            return <ProjectCard key={project.id} {...project} />
+          })}
         </div>
       </section>
     </Layout>

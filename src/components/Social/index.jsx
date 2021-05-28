@@ -7,10 +7,16 @@ import { container } from "./styles.module.scss"
 export default function Social() {
   return (
     <div className={container}>
-      <a href="https://github.com/darlysson" target="_blank" rel="noreferrer">
+      <a
+        aria-label="github-link"
+        href="https://github.com/darlysson"
+        target="_blank"
+        rel="noreferrer"
+      >
         <FaGithub />
       </a>
       <a
+        aria-label="linkedin-link"
         href="https://www.linkedin.com/in/darlyssonalves"
         target="_blank"
         rel="noreferrer"
@@ -18,6 +24,7 @@ export default function Social() {
         <FaLinkedin />
       </a>
       <a
+        aria-label="email-link"
         href="mailto:felipetads2012@gmail.com"
         target="_blank"
         rel="noreferrer"

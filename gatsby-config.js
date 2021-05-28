@@ -1,12 +1,16 @@
 module.exports = {
   siteMetadata: {
-    title: `Darlysson Alves | Frontend Developer`,
-    description: `Portfolio website`,
     author: `Darlysson Alves`,
+    description: `This is a personal portfolio website, proudly created by Darlysson Alves with Gatsby & React JS.`,
+    title: `👨‍💻 Darlysson Alves | Frontend Developer`,
+    url: `https://alvesd.netlify.app`,
   },
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-gatsby-cloud`,
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -15,8 +19,5 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    `gatsby-plugin-gatsby-cloud`,
   ],
 }

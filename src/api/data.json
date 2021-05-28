@@ -1,0 +1,28 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "FAQs",
+      "description": "Application created to manipulate React's useState",
+      "github_url": "https://github.com/darlysson/faqs",
+      "url": "https://faqs.pages.dev/",
+      "techs": ["React"]
+    },
+    {
+      "id": 2,
+      "title": "FAQs 2",
+      "description": "Important description",
+      "github_url": "https://github.com/darlysson/faqs2",
+      "url": "https://faqs2.pages.dev/",
+      "techs": ["React", "Sass"]
+    },
+    {
+      "id": 3,
+      "title": "FAQs 3",
+      "description": "Very Important desciption",
+      "github_url": "https://github.com/darlysson/faqs3",
+      "url": "https://faqs3.pages.dev/",
+      "techs": ["React", "Sass", "Typescript"]
+    }
+  ]
+}

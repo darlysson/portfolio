@@ -22,13 +22,14 @@ export default function About() {
 
         <div className={content}>
           <StaticImage
-            src="../../images/me.jpeg"
-            alt="Profile picture of me."
+            src="../../images/lisbon.jpg"
+            alt="A picture of myself in Eduardo 2nd park, in Lisbon city centre."
             placeholder="blurred"
             layout="fixed"
             width={200}
             height={200}
             className={profileImg}
+            jpgOptions
           />
 
           <p>

@@ -6,26 +6,30 @@ import { GiWorld } from "react-icons/gi"
 import { SiTypescript } from "react-icons/si"
 import { DiSass } from "react-icons/di"
 
-import { project, techs, title } from "./styles.module.scss"
+import { project, Techs, Title } from "./styles.module.scss"
 
-export default function ProjectCard() {
+export default function ProjectCard({
+  title,
+  description,
+  url,
+  github_url,
+  techs,
+}) {
   return (
-    <div class={project}>
-      <h2 className={title}>Gatsby JS</h2>
-      <p>
-        Gatsby is a React-based, GraphQL powered, static site generator. Overall
-        think, part Jekyll, part create-react-app.
-      </p>
-      <div className={techs}>
-        <a href="https://faqs.pages.dev/">
+    <div className={project}>
+      <h2 className={Title}>{title}</h2>
+      <p>{description}</p>
+      <div className={Techs}>
+        <a href={url}>
           <GiWorld />
         </a>
-        <a href="https://github.com/darlysson/faqs">
+        <a href={github_url}>
           <AiFillGithub />
         </a>
-        <DiSass color="#CF649A" />
-        <GrReactjs color="#61DAFB" />
-        <SiTypescript color="#3178C6" />
+
+        {techs.includes("React") && <GrReactjs color="#61DAFB" />}
+        {techs.includes("Sass") && <DiSass color="#CF649A" />}
+        {techs.includes("Typescript") && <SiTypescript color="#3178C6" />}
       </div>
     </div>
   )
