@@ -4,6 +4,7 @@ module.exports = {
     description: `This is a personal portfolio website, proudly created by Darlysson Alves with Gatsby & React JS.`,
     title: `👨‍💻 Darlysson Alves | Frontend Developer`,
     url: `https://alvesd.netlify.app`,
+    image: `./src/images/think.png`,
   },
   plugins: [
     `gatsby-plugin-sass`,

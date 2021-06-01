@@ -31,6 +31,64 @@
     max-width: 40rem;
     margin: 0 auto;
 
+    .blockquoteWrapper {
+      position: relative;
+      font-family: "Jost", "Poppins", "Roboto", sans-serif;
+      font-weight: 800;
+      color: #ffffff;
+      padding: 1.8rem 0;
+      margin: 1.5rem 0 6rem;
+      border-top: solid 1px;
+      border-bottom: solid 1px;
+
+      h4 {
+        position: relative;
+        color: var(--light-gray);
+        font-size: 3rem;
+        font-weight: bold;
+        line-height: 3.2rem;
+        padding-bottom: 1.2rem;
+      }
+
+      cite {
+        position: relative;
+        color: var(--light-gray);
+        font-size: 1rem;
+        font-weight: normal;
+      }
+
+      &:after {
+        position: absolute;
+        content: "”";
+        color: var(--light-blue);
+        font-size: 10rem;
+        line-height: 0;
+        bottom: -2.5rem;
+        right: 2rem;
+        font-family: Times, serif;
+      }
+    }
+
+    ul {
+      font-family: "Poppins", "Roboto", sans-serif;
+      padding-bottom: 1rem;
+      color: var(--light-gray);
+      line-height: 1.65rem;
+      font-size: 1.1rem;
+      text-align: center;
+      list-style-type: none;
+
+      li {
+        span {
+          padding-right: 0.5rem;
+        }
+
+        & + li {
+          padding-top: 1rem;
+        }
+      }
+    }
+
     p {
       color: var(--light-gray);
       padding-bottom: 1rem;

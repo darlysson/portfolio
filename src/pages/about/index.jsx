@@ -7,6 +7,7 @@ import {
   content,
   profileImg,
   sectionTitle,
+  blockquoteWrapper,
 } from "./styles.module.scss"
 
 export default function About() {
@@ -32,26 +33,74 @@ export default function About() {
             jpgOptions
           />
 
+          <div className={blockquoteWrapper}>
+            <blockquote>
+              <h4>Growth and comfort do not coehist.</h4>
+              <cite>&mdash; IBM Former CEO, Ginni Rometty.</cite>
+            </blockquote>
+          </div>
+
           <p>
-            A native New Yorker by way of Manhattan, current New Jerseyan. I've
-            spent half of my life moving back and forth between the two, so you
-            could say I like the pizza and bagels here enough to stick around.
+            I'm a Brazilian boy currently living in the lovely city of Lisbon,
+            Portugal. Being here is all about the sun, good food, good beaches,
+            etc. So, yeah, I just love it :)
           </p>
           <p>
-            I've had a passion for technology and all things nerdy since I was
-            first old enough to hold a Game Boy and tinker with my dad's MS-DOS
-            work laptop, and that love of software and gadgets has been the core
-            of my identity ever since.
+            I'm curious, enthusiastic and a student most of the time. Fast
+            learner and passionate about <strong>learning new things</strong>,
+            especially related to the front-end world and this project is
+            evidence of that. Able to switch between perfectionism and
+            pragmatism, able and willing to{" "}
+            <strong>think outside the box</strong>, and always{" "}
+            <u>looking for improvement</u>.
           </p>
+
+          <ul>
+            <li>
+              <span role="img" aria-label="eyes-emoji">
+                👀
+              </span>
+              I’m interested in the JamStack (<strong>GatsbyJS</strong> &{" "}
+              <strong>Next.js</strong>), CSS, <strong>ReactJS</strong> &{" "}
+              <strong>Typescript</strong>.
+            </li>
+            <li>
+              <span role="img" aria-label="settings-emoji">
+                ⚙️
+              </span>
+              Some of the technologies I have been working with are{" "}
+              <strong>Outsystems</strong>, <strong>HTML</strong>,{" "}
+              <strong>CSS (Sass)</strong>, Handlebars, Gulp...
+            </li>
+            <li>
+              <span role="img" aria-label="programmer-emoji">
+                👨‍💻
+              </span>
+              I have also an understanding of databases and{" "}
+              <strong>RESTful APIs</strong>.
+            </li>
+            <li>
+              <span role="img" aria-label="lightning-emoji">
+                ⚡️
+              </span>
+              Fact about me: I'm a big fan of sports in general, but{" "}
+              <strong>football</strong> is special to me. I love to play and
+              watch it as much as I can.{" "}
+              <span role="img" aria-label="football-emoji">
+                ⚽
+              </span>
+            </li>
+          </ul>
+
           <p>
-            I've also maintained a love of the arts and humanities thanks to
-            wonderful parents who took me to museums, plays, and everything
-            in-between while growing up. I loved it so much that I pursued a BFA
-            from NYU (with a Minor in Web Design and Applications), and have
-            spent the past 10 years pursuing acting and voice-over
-            professionally in NYC. As an actor and narrator I've worked with
-            some amazing clients, such as Audible, Scholastic, Microsoft,
-            Blizzard Entertainment, Nickelodeon, and many more.
+            The quote above is what I have been guided by for the past few
+            years, not only for professional matters but for life itself. I have
+            concluded that there's a <u>better version of myself</u> and it is{" "}
+            <strong>always</strong> <u>outside of my comfort zone</u>. That's
+            why is so important to me to keep in mind that whenever I face
+            troubles or tricky challenges, in life or at work, it will work for
+            my personal growth.{" "}
+            <strong>Trouble is always an opportunity to be better.</strong>
           </p>
         </div>
       </section>

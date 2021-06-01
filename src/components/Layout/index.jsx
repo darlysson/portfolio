@@ -3,6 +3,7 @@ import MobileModal from "../MobileModal"
 
 import "@fontsource/roboto"
 import "@fontsource/poppins"
+import "@fontsource/jost"
 import "@fontsource/poppins/600.css"
 
 import Header from "../Header"
