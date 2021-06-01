@@ -36,7 +36,7 @@ export default function About() {
           <div className={blockquoteWrapper}>
             <blockquote>
               <h4>Growth and comfort do not coehist.</h4>
-              <cite>&mdash; IBM Former CEO, Ginni Rometty.</cite>
+              <cite>&mdash; IBM Former CEO, Ginni Rometty</cite>
             </blockquote>
           </div>
 

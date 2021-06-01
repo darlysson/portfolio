@@ -35,7 +35,7 @@
       position: relative;
       font-family: "Jost", "Poppins", "Roboto", sans-serif;
       font-weight: 800;
-      color: #ffffff;
+      color: var(--light-gray);
       padding: 1.8rem 0;
       margin: 1.5rem 0 6rem;
       border-top: solid 1px;
@@ -43,7 +43,6 @@
 
       h4 {
         position: relative;
-        color: var(--light-gray);
         font-size: 3rem;
         font-weight: bold;
         line-height: 3.2rem;
@@ -53,7 +52,6 @@
 
       cite {
         position: relative;
-        color: var(--light-gray);
         font-size: 1rem;
         font-weight: normal;
       }
@@ -97,6 +95,11 @@
       line-height: 1.65rem;
       font-size: 1.1rem;
       text-align: center;
+    }
+
+    strong,
+    u {
+      color: var(--light-blue);
     }
   }
 }
