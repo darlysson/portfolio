@@ -42,4 +42,12 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
       sans-serif;
   }
+
+  .socialContainer {
+    margin-top: 1.5rem;
+
+    svg {
+      color: var(--light-blue);
+    }
+  }
 }

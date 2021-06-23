@@ -1,5 +1,9 @@
 import React from "react"
-import Social from "../Social"
+import { FaGithub, FaLinkedin } from "react-icons/fa"
+import { AiOutlineMail } from "react-icons/ai"
+
+import Emoji from "../../components/Emoji"
+import Icon from "../Icon"
 
 import {
   container,
@@ -7,6 +11,7 @@ import {
   title,
   titleDesc,
   description,
+  socialContainer,
 } from "./styles.module.scss"
 
 export default function Home() {
@@ -19,16 +24,30 @@ export default function Home() {
       <h2 className={titleDesc}>I build things for the web.</h2>
       <span className={description}>
         Frontend Web Developer currently based in Lisbon
-        <span
-          role="img"
-          aria-label="portugal-flag"
+        <Emoji
+          emoji="&#x1F1F5;&#x1F1F9;"
+          ariaLabel="portugalFlag-emoji"
           style={{ marginLeft: "8px" }}
-        >
-          &#x1F1F5;&#x1F1F9;
-        </span>
+        />
       </span>
 
-      <Social />
+      <div className={socialContainer}>
+        <Icon
+          ariaLabel="github-link"
+          url="https://github.com/darlysson"
+          icon={<FaGithub />}
+        />
+        <Icon
+          ariaLabel="linkedin-link"
+          url="https://www.linkedin.com/in/darlyssonalves"
+          icon={<FaLinkedin />}
+        />
+        <Icon
+          ariaLabel="email-link"
+          url="mailto:felipetads2012@gmail.com"
+          icon={<AiOutlineMail />}
+        />
+      </div>
     </section>
   )
 }

@@ -1,6 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 
+import Emoji from "../../components/Emoji"
+
 import { container, content, me } from "./styles.module.scss"
 import { GrGatsbyjs } from "react-icons/gr"
 import { SiReact } from "react-icons/si"
@@ -13,7 +15,7 @@ export default function Footer() {
         <Link to="/about" className={me}>
           myself
         </Link>
-        😃, using
+        <Emoji emoji="😃" ariaLabel="smilingFace-emoji" />, using
         <a href="https://reactjs.org/" rel="noreferrer" target="_blank">
           <SiReact color="#61DAFB" />
           React

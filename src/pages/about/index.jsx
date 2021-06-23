@@ -1,6 +1,8 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
+import Emoji from "../../components/Emoji"
+
 import Layout from "../../components/Layout"
 import {
   container,
@@ -16,9 +18,7 @@ export default function About() {
       <section className={container}>
         <h2 className={sectionTitle}>
           About me
-          <span role="img" aria-label="programmer-emoji">
-            👨‍💻
-          </span>
+          <Emoji emoji="👨‍💻" ariaLabel="programmer-emoji" />
         </h2>
 
         <div className={content}>
@@ -57,38 +57,27 @@ export default function About() {
 
           <ul>
             <li>
-              <span role="img" aria-label="eyes-emoji">
-                👀
-              </span>
+              <Emoji emoji="👀" ariaLabel="eyes-emoji" />
               I’m interested in the JamStack (<strong>GatsbyJS</strong> &{" "}
               <strong>Next.js</strong>), CSS, <strong>ReactJS</strong> &{" "}
               <strong>Typescript</strong>.
             </li>
             <li>
-              <span role="img" aria-label="settings-emoji">
-                ⚙️
-              </span>
+              <Emoji emoji="⚙️" ariaLabel="settings-emoji" />
               Some of the technologies I have been working with are{" "}
               <strong>Outsystems</strong>, <strong>HTML</strong>,{" "}
               <strong>CSS (Sass)</strong>, Handlebars, Gulp...
             </li>
             <li>
-              <span role="img" aria-label="programmer-emoji">
-                👨‍💻
-              </span>
-              I have also an understanding of databases and{" "}
-              <strong>RESTful APIs</strong>.
+              <Emoji emoji="👨‍💻" ariaLabel="programmer-emoji" />I have also an
+              understanding of databases and <strong>RESTful APIs</strong>.
             </li>
             <li>
-              <span role="img" aria-label="lightning-emoji">
-                ⚡️
-              </span>
+              <Emoji emoji="⚡️" ariaLabel="lightning-emoji" />
               Fact about me: I'm a big fan of sports in general, but{" "}
               <strong>football</strong> is special to me. I love to play and
-              watch it as much as I can.{" "}
-              <span role="img" aria-label="football-emoji">
-                ⚽
-              </span>
+              watch it as much as I can.
+              <Emoji emoji="⚽" ariaLabel="football-emoji" />
             </li>
           </ul>
 

@@ -32,22 +32,24 @@
 
         li {
           & + li {
-            margin-left: 1rem;
+            margin-left: 1.5rem;
           }
 
           a {
             font-size: 1.25rem;
-            font-weight: 500;
-            text-decoration: line-through;
+            font-weight: 700;
+            text-decoration: none;
             color: var(--light-blue);
             text-transform: uppercase;
-            background: linear-gradient(var(--light-gray) 0 0)
-              var(--width, 201%) 100% /200% 5px no-repeat;
+
+            background: linear-gradient(var(--light-gray) 0 0) 0 100% /
+              var(--width, 50%) 4px no-repeat;
 
             &:hover {
-              --width: -101%;
-              transition: 1s;
-              text-decoration: none;
+              --width: 100%;
+              transition: 0.5s;
+              background: linear-gradient(var(--light-blue) 0 0) 0 100% /
+                var(--width, 50%) 4px no-repeat;
             }
           }
         }
