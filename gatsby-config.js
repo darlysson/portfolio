@@ -22,7 +22,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        icon: `src/images/think.png`,
+        icon: `src/images/logo.png`,
         start_url: `/`,
       },
     },
