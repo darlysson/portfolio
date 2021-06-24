@@ -3,6 +3,7 @@
   padding: 1rem;
   border-radius: 0.25rem;
   position: relative;
+  filter: brightness(110%);
 
   .Title {
     color: var(--light-blue);
@@ -31,7 +32,7 @@
     a {
       text-decoration: none;
       color: var(--dark-blue);
-      opacity: 0.6;
+      opacity: 0.8;
 
       &:hover {
         opacity: 1;
@@ -50,7 +51,7 @@
     svg {
       width: 1.5rem;
       height: 1.5rem;
-      filter: brightness(90%);
+      filter: brightness(85%);
 
       & + svg {
         margin-left: 0.5rem;

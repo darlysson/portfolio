@@ -1,9 +1,9 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
-import Emoji from "../../components/Emoji"
+import Emoji from "components/Emoji"
+import Layout from "components/Layout"
 
-import Layout from "../../components/Layout"
 import {
   container,
   content,

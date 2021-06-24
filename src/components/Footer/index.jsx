@@ -1,11 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
-
-import Emoji from "../../components/Emoji"
-
-import { container, content, me } from "./styles.module.scss"
 import { GrGatsbyjs } from "react-icons/gr"
 import { SiReact } from "react-icons/si"
+
+import Emoji from "components/Emoji"
+
+import { container, content, me } from "./styles.module.scss"
 
 export default function Footer() {
   return (

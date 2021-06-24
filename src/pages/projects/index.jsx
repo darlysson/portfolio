@@ -1,11 +1,11 @@
 import React from "react"
 
-import Layout from "../../components/Layout"
-import ProjectCard from "../../components/ProjectCard"
-import Emoji from "../../components/Emoji"
+import Layout from "components/Layout"
+import ProjectCard from "components/ProjectCard"
+import Emoji from "components/Emoji"
 
+import { projects } from "api"
 import { projectList, container, sectionTitle } from "./styles.module.scss"
-import { projects } from "../../api/data.json"
 
 export default function Projects() {
   return (

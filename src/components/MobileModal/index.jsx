@@ -1,9 +1,9 @@
 import React from "react"
 import Modal from "react-modal"
 import { Link } from "gatsby"
-
 import { CgClose } from "react-icons/cg"
-import DownloadCVButton from "../DownloadCVButton"
+
+import DownloadCVButton from "components/DownloadCVButton"
 
 import {
   link,

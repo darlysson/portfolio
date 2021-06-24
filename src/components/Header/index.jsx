@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import { GiHamburgerMenu } from "react-icons/gi"
 
-import DownloadCVButton from "../DownloadCVButton"
+import DownloadCVButton from "components/DownloadCVButton"
 
 import { container, hamburgerIcon, links } from "./styles.module.scss"
 

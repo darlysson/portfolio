@@ -2,8 +2,8 @@ import React from "react"
 import { FaGithub, FaLinkedin } from "react-icons/fa"
 import { AiOutlineMail } from "react-icons/ai"
 
-import Emoji from "../../components/Emoji"
-import Icon from "../Icon"
+import Emoji from "components/Emoji"
+import Icon from "components/Icon"
 
 import {
   container,

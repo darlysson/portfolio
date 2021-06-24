@@ -1,12 +1,14 @@
 import React from "react"
+
 import { GrReactjs } from "react-icons/gr"
 import { AiFillGithub } from "react-icons/ai"
 import { GiWorld } from "react-icons/gi"
 import { DiSass } from "react-icons/di"
 import { SiTypescript, SiTailwindcss, SiHtml5 } from "react-icons/si"
 
-import Icon from "../Icon"
-import Emoji from "../../components/Emoji"
+import Icon from "components/Icon"
+import Emoji from "components/Emoji"
+
 import { project, Techs, Title } from "./styles.module.scss"
 
 export default function ProjectCard({
@@ -47,7 +49,10 @@ export default function ProjectCard({
               )
 
             default:
-              return <SiHtml5 color="#E96228" title="HTML" />
+              return (
+                (<SiHtml5 color="#E96228" title="HTML" />),
+                (<DiSass color="#CF649A" title="Sass" />)
+              )
           }
         })}
       </div>
