@@ -1,6 +1,14 @@
 export const projects = [
   {
     id: 1,
+    title: "DT Money",
+    description: "React application that aims to manage personal finances.",
+    github_url: "https://github.com/darlysson/01-dtmoney",
+    url: "https://01-dtmoney.pages.dev/",
+    techs: ["React", "Typescript", "Styled Components"],
+  },
+  {
+    id: 2,
     title: "Insurance Landing Page",
     description: "Landing page created to try Tailwind CSS.",
     github_url: "https://github.com/darlysson/insurance",
@@ -8,7 +16,7 @@ export const projects = [
     techs: ["Html", "Tailwind"],
   },
   {
-    id: 2,
+    id: 3,
     title: "FAQs",
     description:
       "Application to simulate a FAQ section, composed by show & hide description.",
@@ -17,7 +25,7 @@ export const projects = [
     techs: ["React", "Sass"],
   },
   {
-    id: 3,
+    id: 4,
     title: "Tours",
     description:
       "Application created to manipulated some of the basics aspects of React Development.",
@@ -26,7 +34,7 @@ export const projects = [
     techs: ["React", "Sass"],
   },
   {
-    id: 4,
+    id: 5,
     title: "Reviews",
     description:
       "Application created to manipulated some of the basics aspects of React Development.",
