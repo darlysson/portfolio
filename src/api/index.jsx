@@ -13,7 +13,7 @@ export const projects = [
     description: "Landing page created to try Tailwind CSS.",
     github_url: "https://github.com/darlysson/insurance",
     url: "https://darlysson.github.io/insurance/",
-    techs: ["Html", "Tailwind"],
+    techs: ["HTML", "Tailwind"],
   },
   {
     id: 3,

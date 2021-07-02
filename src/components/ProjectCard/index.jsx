@@ -36,14 +36,14 @@ export default function ProjectCard({
               return <SiTypescript color="#3178C6" title="Typescript" />
             case "Tailwind":
               return <SiTailwindcss color="#06B6D4" title="Tailwind CSS" />
-            case "Html":
+            case "HTML":
               return <SiHtml5 color="#E96228" title="HTML" />
             case "Styled Components":
               return (
                 <Emoji
                   emoji="💅"
                   ariaLabel="nails-emoji"
-                  style={{ marginLeft: "0.5rem" }}
+                  style={{ marginLeft: "0.5rem", cursor: "default" }}
                   title="Styled Components"
                 />
               )
