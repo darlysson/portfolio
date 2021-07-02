@@ -74,12 +74,16 @@
       color: var(--light-gray);
       line-height: 1.65rem;
       font-size: 1.1rem;
-      text-align: center;
       list-style-type: none;
 
       li {
         span {
           padding-right: 0.5rem;
+
+          &.highlight {
+            color: var(--light-blue);
+            padding-right: 0;
+          }
         }
 
         & + li {
@@ -94,7 +98,10 @@
       font-family: "Poppins", "Roboto", sans-serif;
       line-height: 1.65rem;
       font-size: 1.1rem;
-      text-align: center;
+
+      span.highlight {
+        color: var(--light-blue);
+      }
     }
 
     strong,
