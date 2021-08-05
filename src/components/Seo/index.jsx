@@ -17,7 +17,7 @@ export default function Seo() {
     }
   `)
 
-  const { description, title, url } = data.site.siteMetadata
+  const { description, title, url, author } = data.site.siteMetadata
 
   return (
     <Helmet title={`${title}`}>
@@ -25,12 +25,13 @@ export default function Seo() {
       <title>{title}</title>
       <meta name="description" content={description} />
       <meta name="title" content={title} />
+      <meta name="author" content={author} />
 
       <meta property="og:url" content={url} />
       <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content={image} />
+      <meta property="og:image" content={`${image}`} />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
 
@@ -38,7 +39,7 @@ export default function Seo() {
       <meta property="twitter:url" content={url} />
       <meta property="twitter:title" content={title} />
       <meta property="twitter:description" content={description} />
-      <meta property="twitter:image" content={image} />
+      <meta property="twitter:image" content={`${image}`} />
     </Helmet>
   )
 }
