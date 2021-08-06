@@ -1,11 +1,17 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
-import image from "../../images/seo-image.png"
 
 export default function Seo() {
   const data = useStaticQuery(graphql`
     query SEO {
+      file(name: { eq: "seo-image" }) {
+        childImageSharp {
+          fixed {
+            ...GatsbyImageSharpFixed_noBase64
+          }
+        }
+      }
       site {
         siteMetadata {
           author
@@ -17,6 +23,7 @@ export default function Seo() {
     }
   `)
 
+  const { imgSrc } = data.file.childImageSharp.fixed
   const { description, title, url, author } = data.site.siteMetadata
 
   return (
@@ -31,7 +38,7 @@ export default function Seo() {
       <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content={`${image}`} />
+      <meta property="og:image" content={`${url}${imgSrc}`} />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
 
@@ -39,7 +46,7 @@ export default function Seo() {
       <meta property="twitter:url" content={url} />
       <meta property="twitter:title" content={title} />
       <meta property="twitter:description" content={description} />
-      <meta property="twitter:image" content={`${image}`} />
+      <meta property="twitter:image" content={`${url}${imgSrc}`} />
     </Helmet>
   )
 }

@@ -23,6 +23,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         icon: `src/images/logo.png`,
+        image: `src/images/seo-image.png`,
         start_url: `/`,
       },
     },
