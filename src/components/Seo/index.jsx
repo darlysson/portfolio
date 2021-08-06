@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from "gatsby"
 export default function Seo() {
   const data = useStaticQuery(graphql`
     query SEO {
-      file(name: { eq: "seo-image" }) {
+      file(name: { eq: "social" }) {
         childImageSharp {
           fixed {
             ...GatsbyImageSharpFixed_noBase64
