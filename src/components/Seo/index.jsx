@@ -23,7 +23,7 @@ export default function Seo() {
     }
   `)
 
-  const { imgSrc } = data.file.childImageSharp.fixed
+  const imgSrc = data.file.childImageSharp.fixed.src
   const { description, title, url, author } = data.site.siteMetadata
 
   return (
