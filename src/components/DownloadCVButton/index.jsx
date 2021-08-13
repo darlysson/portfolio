@@ -11,6 +11,7 @@ export default function DownloadCVButton() {
       rel="noreferrer"
       href="https://app.box.com/s/0jexa7jax6j3klmt66pzjzhiqin096jl"
       target="_blank"
+      data-testid="downloadButton"
     >
       Download CV
       <BiLinkExternal />
