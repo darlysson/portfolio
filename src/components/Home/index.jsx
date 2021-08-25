@@ -44,7 +44,7 @@ export default function Home() {
         />
         <Icon
           ariaLabel="email-link"
-          url="mailto:felipetads2012@gmail.com"
+          url="mailto:alvesd.dev@gmail.com"
           icon={<AiOutlineMail />}
         />
       </div>

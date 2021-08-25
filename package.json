@@ -2,7 +2,7 @@
   "private": true,
   "description": "A personal portfolio website, proudly created by Darlysson Alves with Gatsby & React JS.",
   "version": "0.1.0",
-  "author": "Darlysson Alves <felipetads2012@gmail.com>",
+  "author": "Darlysson Alves <alvesd.dev@gmail.com>",
   "dependencies": {
     "@fontsource/jost": "^4.4.2",
     "@fontsource/poppins": "^4.3.0",
