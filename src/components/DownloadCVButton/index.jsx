@@ -8,7 +8,7 @@ export default function DownloadCVButton() {
       role="button"
       className={downloadButton}
       rel="noreferrer"
-      href="https://drive.google.com/file/d/1xLYxx0WsXCqAi0fKnRk-zI2CLFx1TYJJ/view"
+      href="https://drive.google.com/file/d/1DyNhVUw8rK7XNrF_7Buq5ObNRBgJhQFX/view?usp=drive_link"
       target="_blank"
       data-testid="downloadButton"
     >
